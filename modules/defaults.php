@@ -15,13 +15,12 @@ $currency = 'nano';
 $themeChoice = 'light';
 
 // Choice of block explorer
-// Nano Explorers:      'ninja', 'nanocrawler'
-// Nano Beta Explorers: 'nanocrawler-beta'
-// Banano Explorers:    'bananocreeper', 'bananolooker', 'yellowspyglass'
-$blockExplorer = 'nanocrawler';
+// Nano Explorers:      'nanexplorer'
+// Banano Explorers:    'bananocreeper'
+$blockExplorer = 'nanexplorer';
 
 // Choice of widget
-// Options: 'qr', 'natricon', 'monkey'
+// Options: 'qr', 'monkey'
 $widgetType = 'qr';
 
 // autorefresh interval for the status webpage in seconds
@@ -70,7 +69,7 @@ $nanoNodeRPCPort = '7076';
 $nanoNodeAccount = NULL;
 
 // Donation account for maintaining this node
-$nanoDonationAccount = $nanoNodeAccount;
+$nanoDonationAccount = 'nano_1so76dzauddjs3dr39hc5h1tn5o8ohgk4uqtkspj5okf6fdfs7mthi1oym4e';
 
 // Number of decimal places to display Nano balances, i.e.
 $nanoNumDecimalPlaces = 0;

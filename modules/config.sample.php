@@ -12,24 +12,21 @@
 // set $currency, $themeChoice, and $blockExplorer to
 // corresponding Nano / Banano values.
 
-// Currency 'nano' or 'banano' or 'nano-beta' or 'paw'
+// Currency 'nano' or 'banano' or 'nano-beta'
 // $currency = 'nano';
 
 // Theme of your Node Monitor
 // Nano Themes:   'dark' or 'light'
 // Banano Themes: 'banano' or 'banano-dark'
-// PAW Themes: 'paw'
 // $themeChoice = 'light';
 
 // Choice of block explorer
-// Nano Explorers:      'ninja', 'nanocrawler'
-// Nano Beta Explorers: 'nanocrawler-beta'
-// Banano Explorers:    'bananocreeper', 'bananolooker', 'yellowspyglass'
-// PAW Explorers:       'tracker'
-// $blockExplorer = 'nanocrawler';
+// Nano Explorers:      'nanexplorer'
+// Banano Explorers:    'bananocreeper'
+// $blockExplorer = 'nanexplorer';
 
 // Choice of widget
-// Options: 'qr', 'natricon', 'monkey', 'paw'
+// Options: 'qr', 'monkey'
 // $widgetType = 'qr';
 
 // Autorefresh interval for the status webpage in seconds
@@ -86,7 +83,7 @@
 // $nanoNodeAccount = 'nano_1f56swb9qtpy3yoxiscq9799nerek153w43yjc9atoaeg3e91cc9zfr89ehj';
 
 // Donation account for maintaining this node
-// $nanoDonationAccount = 'nano_1f56swb9qtpy3yoxiscq9799nerek153w43yjc9atoaeg3e91cc9zfr89ehj';
+// $nanoDonationAccount = 'nano_1so76dzauddjs3dr39hc5h1tn5o8ohgk4uqtkspj5okf6fdfs7mthi1oym4e';
 
 // Number of decimal places to display Nano balances, i.e.
 // $nanoNumDecimalPlaces = 2;

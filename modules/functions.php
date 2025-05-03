@@ -25,12 +25,6 @@ function rawToBanano($raw)
   return rawToMnano($raw) * 10.;
 }
 
-// raw to banano
-function rawToPaw($raw)
-{
-  return rawToMnano($raw) * 1000.;
-}
-
 // raw to currency
 function rawToCurrency($raw, $currency)
 {
@@ -38,8 +32,6 @@ function rawToCurrency($raw, $currency)
   {
     case 'banano':
       return rawToBanano($raw);
-    case 'paw':
-      return rawToPaw($raw);
     default:
       return rawToMnano($raw);
   }
@@ -323,20 +315,12 @@ function getAccountUrl($account, $blockExplorer)
 
   switch ($blockExplorer)
   {
-    case 'ninja':
-      return "https://mynano.ninja/account/" . $account;
-    case 'nanocrawler-beta':
-      return "https://beta.nanocrawler.cc/explorer/account/" . $account;
     case 'bananocreeper':
-      return "https://creeper.banano.cc/explorer/account/" . $account;
-    case 'tracker':
-      return "https://tracker.paw.digital/account/" . $account;
-    case 'bananolooker':
-      return "https://bananolooker.com/account/" . $account;
-    case 'yellowspyglass':
-      return "https://yellowspyglass.com/account/" .$account;
+      return "https://creeper.banano.cc/explorer/account/{$account}";
+    case 'nanexplorer':
+      return "https://nanexplorer.com/nano/account/{$account}";
     default:
-      return "https://nanocrawler.cc/explorer/account/" . $account;
+      return "https://nanexplorer.com/nano/account/{$account}";
   }
 }
 
@@ -418,9 +402,6 @@ function currencyName($currency)
     case 'nano-beta':
       return "Nano BETA";
     
-    case 'paw':
-      return "PAW";
-    
     default:
       return "Nano";
   }
@@ -437,9 +418,6 @@ function currencySymbol($currency)
     
     case 'nano-beta':
       return "\u{3B2}NANO";
-    
-    case 'paw':
-      return "PAW";
     
     default:
       return "NANO";
