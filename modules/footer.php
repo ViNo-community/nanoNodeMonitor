@@ -8,13 +8,13 @@
       // switch Nano / Banano rep accounts & explorer
       $repAccount = NODEMON_REP_ACCOUNT;
       $donAccount = NODEMON_DON_ACCOUNT;
-      $repExplorer = 'ninja';
+      $repExplorer = 'nanexplorer';
 
       if ($currency == "banano")
       {
         $repAccount = NODEMON_BAN_REP_ACCOUNT;
         $donAccount = NODEMON_BAN_DON_ACCOUNT;
-        $repExplorer = 'banano';
+        $repExplorer = 'bananocreeper';
       }
     ?>
 
