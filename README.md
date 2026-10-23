@@ -27,13 +27,13 @@ Edit it according to your needs and you're good to go!
 
 1. Create a directory called _nano_ and go inside it: `mkdir nano && cd nano`
 
-2. Create a new file called _docker-compose.yml_ with the following contents (but replace the TAG with a proper version):
+2. Create a new file called _docker-compose.yml_ with the following contents (replace TAG with your Nano node version):
 
 ```
 version: '3'
 services:
   monitor:
-    image: "gabrielpatrola/nanonodemonitor:TAG"
+    image: "gabrielpatrola/nanonodemonitor:1.8.1"
     restart: "unless-stopped"
     ports:
      - "80:80"

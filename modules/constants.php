@@ -1,7 +1,7 @@
 <?php
 
 // the project version
-const PROJECT_VERSION = '1.8.0';
+const PROJECT_VERSION = '1.8.1';
 
 // project URL
 const PROJECT_URL = 'https://github.com/ViNo-community/nanoNodeMonitor';
