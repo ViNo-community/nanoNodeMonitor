@@ -292,6 +292,10 @@ function getNodeUptime($apiKey, $uptimeRatio = 30)
 // last characters with ellipsis in the center
 function truncateAddress($addr)
 {
+  if (!is_string($addr) || $addr === '') {
+    return $addr;
+  }
+
   $totalNumChar = NANO_ADDR_NUM_CHAR;
   $numEllipsis  = 3; // ...
   $numPrefix    = 4; // xrb_

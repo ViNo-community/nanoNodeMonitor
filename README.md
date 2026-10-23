@@ -1,6 +1,6 @@
 # Nano Node Monitor
 
-![GitHub release](https://img.shields.io/github/release/NanoTools/nanoNodeMonitor.svg?style=flat-square) [![StyleCI](https://styleci.io/repos/118352667/shield?branch=master)](https://styleci.io/repos/118352667) [![Docker Pulls](https://img.shields.io/docker/pulls/nanotools/nanonodemonitor.svg?style=flat-square)](https://hub.docker.com/r/nanotools/nanonodemonitor/)
+![GitHub release](https://img.shields.io/github/release/NanoTools/nanoNodeMonitor.svg?style=flat-square) [![StyleCI](https://styleci.io/repos/118352667/shield?branch=master)](https://styleci.io/repos/118352667) [![Docker Pulls](https://img.shields.io/docker/pulls/gabrielpatrola/nanonodemonitor.svg?style=flat-square)](https://hub.docker.com/r/gabrielpatrola/nanonodemonitor/)
 
 Nano Node Monitor is a server-side PHP-based monitor for Nano and Banano nodes. It connects to a running node via RPC and displays it's status on a simple webpage. Being server-side, it does not expose the RPC interface of the Nano node to the public.
 
@@ -12,13 +12,13 @@ Nano Node Monitor is a server-side PHP-based monitor for Nano and Banano nodes. 
 
 ### Pulling Docker image
 
-    sudo docker pull nanotools/nanonodemonitor
+    sudo docker pull gabrielpatrola/nanonodemonitor
 
 ### Running
 
 #### Standalone
 
-    sudo docker run -d -p 80:80 -v ~:/opt --restart=unless-stopped nanotools/nanonodemonitor
+    sudo docker run -d -p 80:80 -v ~:/opt --restart=unless-stopped gabrielpatrola/nanonodemonitor
 
 This will create a directory called _nanoNodeMonitor_ inside your home directory with the _config.php_ inside it.
 Edit it according to your needs and you're good to go!
@@ -33,7 +33,7 @@ Edit it according to your needs and you're good to go!
 version: '3'
 services:
   monitor:
-    image: "nanotools/nanonodemonitor:TAG"
+    image: "gabrielpatrola/nanonodemonitor:TAG"
     restart: "unless-stopped"
     ports:
      - "80:80"
@@ -61,7 +61,7 @@ services:
 ### Prerequisites
 
 - Running Nano Node with RPC enabled ([Tutorial](https://docs.nano.org/running-a-node/node-setup/))
-- Webserver with PHP 8.0
+- Webserver with patched PHP: 8.3.36, 8.4.27, 8.5.12, or 8.2.35 (or a newer release on those branches). PHP 8.1 and earlier are end of life and are not patched for CVE-2026-109618 or CVE-2026-109619.
 - PHP-Curl Module
 
     `sudo apt-get install php-curl`
